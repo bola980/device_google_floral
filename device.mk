@@ -1105,6 +1105,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs
+
 # insmod files
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/init.insmod.coral.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.coral.cfg \
